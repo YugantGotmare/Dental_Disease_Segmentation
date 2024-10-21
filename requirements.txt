@@ -7,5 +7,4 @@ Pillow
 scikit-learn
 jsonschema
 tqdm
-seaborn
 
