@@ -1,3 +1,4 @@
+import numpy as np
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Conv2DTranspose, concatenate, Dropout, BatchNormalization
 from tensorflow.keras.models import Model
