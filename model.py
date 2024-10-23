@@ -45,10 +45,6 @@ def unet_vgg16_model(input_shape):
     u7 = Conv2DTranspose(128, (2, 2), strides=(2, 2), padding='same')(c6)
     u7 = concatenate([u7, c1])
     c7 = Conv2D(128, (3, 3), activation='relu', padding='same')(u7)
-    
-    u7 = Conv2DTranspose(128, (2, 2), strides=(2, 2), padding='same')(c6)
-    u7 = concatenate([u7, c1])
-    c7 = Conv2D(128, (3, 3), activation='relu', padding='same')(u7)
 
     # Output layer: 1 channel for binary mask prediction
     outputs = Conv2D(1, (1, 1), activation='sigmoid')(c7)
