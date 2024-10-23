@@ -9,7 +9,7 @@ def unet_vgg16_model(input_shape):
     Builds a U-Net model using the VGG16 architecture as a backbone.
     
     Parameters:
-    input_shape (tuple): Shape of the input image (height, width, channels).
+    input_shape: Shape of the input image (height, width, channels).
     
     Returns:
     Model: Compiled U-Net model.
