@@ -1,94 +1,34 @@
-# Dental Disease Segementation
+# Dental Disease Segmentation
 
-This project uses a U-Net architecture with a VGG16 encoder model to segment dental X-ray images, identifying conditions like Caries, Crown, Filling, Implant, and more. The model is trained on annotated data, aiming to improve diagnostic accuracy in dental practice.
+This project leverages a U-Net architecture with a VGG16 encoder to segment dental X-ray images, aiming to identify dental conditions like Caries, Crown, Filling, Implant, and more. The model is trained on annotated data to enhance diagnostic accuracy in dental practices.
 
 ## Project Structure
 
-The project is divided into several Python files for modularity:
+The project is divided into modular Python files for easier management and scalability:
 
-1. **`data_loader.py`**:
-    - Responsible for loading and preprocessing the images and masks.
-    - Contains functions to read COCO-style annotations, resize images, and generate batches for model training.
-  
-2. **`visualization.py`**:
-    - Provides functions for visualizing the original images, ground truth masks, and their overlays.
-    - Useful for visually inspecting the dataset and results.
+1. **`data_loader.py`**
+   - Handles loading and preprocessing of images and masks.
+   - Functions include reading COCO-style annotations, resizing images, and generating batches for training.
 
-3. **`model.py`**:
-    - Defines the U-Net model architecture using a VGG16 backbone.
-    - The model is built using Keras and TensorFlow.
-      
-4. **`train.py`**:
-    - Contains the training loop and functions for loading data using the generator.
-    - Handles model compilation and training.
+2. **`visualization.py`**
+   - Contains functions to visualize original images, ground truth masks, and their overlays.
+   - Useful for dataset inspection and result analysis.
 
-5. **`main.py`**:
-    - The main script to train the model and save the trained model to disk.
-    - Orchestrates the overall workflow, including data loading, training, and saving.
+3. **`model.py`**
+   - Defines the U-Net model architecture with a VGG16 backbone, using Keras and TensorFlow.
+
+4. **`train.py`**
+   - Contains the training loop and functions for loading data.
+   - Manages model compilation, training, and evaluation.
+
+5. **`main.py`**
+   - The main script for orchestrating the workflow, including data loading, model training, and saving the trained model.
 
 ## How to Run the Project
 
 ### 1. Install Dependencies
 
-Before running the project, make sure to install the required Python packages. You can install them using `pip`:
+Install the required Python packages by running:
 
 ```bash
 pip install -r requirements.txt
-
-
-
-Here’s the README.md file formatted appropriately:
-
-markdown
-Copy code
-# U-Net Image Segmentation Project
-
-This project implements a U-Net architecture for image segmentation using a VGG16 backbone. The model is designed to segment images into foreground and background, and it uses COCO-style annotations to train on custom datasets.
-
-## Project Structure
-
-The project is divided into several Python files for modularity:
-
-1. **`data_loader.py`**:
-    - Responsible for loading and preprocessing the images and masks.
-    - Contains functions to read COCO-style annotations, resize images, and generate batches for model training.
-  
-2. **`visualization.py`**:
-    - Provides functions for visualizing the original images, ground truth masks, and their overlays.
-    - Useful for visually inspecting the dataset and results.
-
-3. **`model.py`**:
-    - Defines the U-Net model architecture using a VGG16 backbone.
-    - The model is built using Keras and TensorFlow.
-
-4. **`train.py`**:
-    - Contains the training loop and functions for loading data using the generator.
-    - Handles model compilation and training.
-
-5. **`main.py`**:
-    - The main script to train the model and save the trained model to disk.
-    - Orchestrates the overall workflow, including data loading, training, and saving.
-
-## How to Run the Project
-
-### 1. Install Dependencies
-
-Before running the project, make sure to install the required Python packages. You can install them using `pip`:
-
-```bash
-pip install -r requirements.txt
-
-### 2. Prepare the Dataset
-
-Download data from [roboflow](https://universe.roboflow.com/arshs-workspace-radio/vzrad2)
-
-### 3. Train the Model
-Run main.py to train the model. This script will:
-
-Load and preprocess the dataset.
-Train the U-Net model.
-Save the trained model to a .h5 file.
-
-```bash
-python main.py
-
