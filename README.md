@@ -17,3 +17,7 @@ The project is divided into several Python files for modularity:
 3. **`model.py`**:
     - Defines the U-Net model architecture using a VGG16 backbone.
     - The model is built using Keras and TensorFlow.
+      
+4. **`train.py`**:
+    - Contains the training loop and functions for loading data using the generator.
+    - Handles model compilation and training.
