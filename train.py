@@ -13,7 +13,7 @@ def train_model(image_dir, mask_dir, annotations_path, batch_size, epochs, input
     annotations_path (str): Path to the COCO-style annotations JSON file.
     batch_size (int): Batch size for training.
     epochs (int): Number of training epochs.
-    input_shape (tuple): Input shape of the model.
+    input_shape: Input shape of the model.
     
     Returns:
     Model: Trained U-Net model.
