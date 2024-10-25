@@ -21,3 +21,7 @@ The project is divided into several Python files for modularity:
 4. **`train.py`**:
     - Contains the training loop and functions for loading data using the generator.
     - Handles model compilation and training.
+
+5. **`main.py`**:
+    - The main script to train the model and save the trained model to disk.
+    - Orchestrates the overall workflow, including data loading, training, and saving.
