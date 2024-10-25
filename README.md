@@ -34,3 +34,61 @@ Before running the project, make sure to install the required Python packages. Y
 
 ```bash
 pip install -r requirements.txt
+
+
+
+Here’s the README.md file formatted appropriately:
+
+markdown
+Copy code
+# U-Net Image Segmentation Project
+
+This project implements a U-Net architecture for image segmentation using a VGG16 backbone. The model is designed to segment images into foreground and background, and it uses COCO-style annotations to train on custom datasets.
+
+## Project Structure
+
+The project is divided into several Python files for modularity:
+
+1. **`data_loader.py`**:
+    - Responsible for loading and preprocessing the images and masks.
+    - Contains functions to read COCO-style annotations, resize images, and generate batches for model training.
+  
+2. **`visualization.py`**:
+    - Provides functions for visualizing the original images, ground truth masks, and their overlays.
+    - Useful for visually inspecting the dataset and results.
+
+3. **`model.py`**:
+    - Defines the U-Net model architecture using a VGG16 backbone.
+    - The model is built using Keras and TensorFlow.
+
+4. **`train.py`**:
+    - Contains the training loop and functions for loading data using the generator.
+    - Handles model compilation and training.
+
+5. **`main.py`**:
+    - The main script to train the model and save the trained model to disk.
+    - Orchestrates the overall workflow, including data loading, training, and saving.
+
+## How to Run the Project
+
+### 1. Install Dependencies
+
+Before running the project, make sure to install the required Python packages. You can install them using `pip`:
+
+```bash
+pip install -r requirements.txt
+
+### 2. Prepare the Dataset
+
+Download data from [roboflow](https://universe.roboflow.com/arshs-workspace-radio/vzrad2)
+
+### 3. Train the Model
+Run main.py to train the model. This script will:
+
+Load and preprocess the dataset.
+Train the U-Net model.
+Save the trained model to a .h5 file.
+
+```bash
+python main.py
+
