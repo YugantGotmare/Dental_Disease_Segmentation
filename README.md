@@ -25,3 +25,12 @@ The project is divided into several Python files for modularity:
 5. **`main.py`**:
     - The main script to train the model and save the trained model to disk.
     - Orchestrates the overall workflow, including data loading, training, and saving.
+
+## How to Run the Project
+
+### 1. Install Dependencies
+
+Before running the project, make sure to install the required Python packages. You can install them using `pip`:
+
+```bash
+pip install -r requirements.txt
