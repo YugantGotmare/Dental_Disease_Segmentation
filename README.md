@@ -30,5 +30,13 @@ The project is divided into modular Python files for easier management and scala
 
 Install the required Python packages by running:
 
-```bash
 pip install -r requirements.txt
+
+### 2. Prepare the Dataset
+
+Download the dataset from [roboflow](https://universe.roboflow.com/arshs-workspace-radio/vzrad2)
+
+
+
+
+
