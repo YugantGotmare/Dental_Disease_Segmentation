@@ -4,6 +4,7 @@ import numpy as np
 from PIL import Image
 from collections import Counter
 
+# Load annotations from a JSON file
 def load_annotations(json_path):
     """
     Loads COCO-style annotations from a JSON file.
