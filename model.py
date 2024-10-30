@@ -4,7 +4,6 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D, Conv2DTranspose, conca
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 
-# Define the U-Net model with VGG16 as a backbone
 def unet_vgg16_model(input_shape):
     """
     Builds a U-Net model using the VGG16 architecture as a backbone.
