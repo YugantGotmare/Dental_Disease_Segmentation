@@ -1,6 +1,7 @@
 import os
 from train import train_model, save_model
 
+# Main function to train and save the model
 def main():
     """
     Main function to execute the model training and saving pipeline.
