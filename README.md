@@ -39,6 +39,9 @@ Download the dataset from [roboflow](https://universe.roboflow.com/arshs-workspa
 ### 3. Sample of Dataset
 ![Sample Dental X-ray Image](https://github.com/YugantGotmare/Dental_Disease_Segmentation/raw/main/Data/data.png)
 
+### 4. Result 
+![Sample Dental X-ray Image](https://github.com/YugantGotmare/Dental_Disease_Segmentation/blob/main/results/result1.png)
+
 
 
 
