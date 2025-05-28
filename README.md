@@ -36,6 +36,9 @@ pip install -r requirements.txt
 
 Download the dataset from [roboflow](https://universe.roboflow.com/arshs-workspace-radio/vzrad2)
 
+### 3. Sample of Dataset
+![Sample Dental X-ray Image](https://github.com/YugantGotmare/Dental_Disease_Segmentation/raw/main/Data/data.png)
+
 
 
 
